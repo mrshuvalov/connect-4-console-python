@@ -36,7 +36,7 @@ class ConnectFour:
         :param col: int: column index of new move
         :returns: True if a move is valid else False
         """
-        return self.board[5][col] == 0
+        return self.board[self.height-1][col] == 0  
 
     def get_next_open_row(self, col):
         """
